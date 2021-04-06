@@ -467,6 +467,118 @@ class _DicePageState extends State<DicePage>
     ),
     ],
     ),
+    ),Expanded(
+    child: Column(
+    children: <Widget>[
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    ],
+    ),
+    ),
+    Expanded(
+    child: Column(
+    children: <Widget>[
+    Text(
+    'Total clicked',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '$dice1count',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '$dice2count',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '$dice3count',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '$dice4count',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    ],
+    ),
+    ),
+    Expanded(
+    child: Column(
+    children: <Widget>[
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    Text(
+    '\t|\t',
+    style: TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.bold,
+    ),
     ),
 
 
