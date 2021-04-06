@@ -83,7 +83,67 @@ class _DicePageState extends State<DicePage>
     winn = 3;
     } else {
     winner = dice4;
-    winn = 4;
+    winn = 4;}
+    if (dice2count >= dice1count &&
+    dice3count >= dice1count &&
+    dice4count >= dice1count) {
+    if (limit > 0) {
+    limit = limit - 1;
+    }
+    }
+    ;
+    if (dice1count == 10 &&
+    dice2count == 10 &&
+    dice3count == 10 &&
+    dice4count == 10) {
+    AlertDialog alert = AlertDialog(
+    title: Text('Winner: Dice $winn'),
+    content: Text('Points: $winner points'),
+    actions: [
+    FlatButton(
+    onPressed: () {
+    Navigator.of(context).pop();
+    },
+    child: Text('Ok'),
+    ),
+    FlatButton(
+    onPressed: () {
+    setState(() {
+    total = 0;
+    winner = 0;
+    winn = 0;
+    dice1 = 0;
+    dice2 = 0;
+    dice3 = 0;
+    dice4 = 0;
+    limit = 10;
+    left = 1;
+    right = 1;
+    Bleft = 1;
+    Bright = 1;
+    dice1count = 0;
+    dice2count = 0;
+    dice3count = 0;
+    dice4count = 0;
+    });
+    Navigator.of(context).pop();
+    },
+    child: Text('Restart'),
+    ),
+    ],
+    );
+    showDialog(
+    context: context,
+    builder: (BuildContext) {
+    return alert;
+    },
+    );
+    }
+    });
+    },
+    child: Image.asset('images/dice$Bleft.png'),
+    ),
+    ),
 
 
 
