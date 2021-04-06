@@ -583,3 +583,73 @@ class _DicePageState extends State<DicePage>
 
 
 
+
+
+
+      Text(
+        '\t|\t',
+        style: TextStyle(
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    ],
+    ),
+    ),
+      Expanded(
+        child: Column(
+          children: <Widget>[
+            Text(
+              'Total Ponts',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '$dice1',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '$dice2',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '$dice3',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '$dice4',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+    ),
+        ],
+        ),
+        ),
+        ),
+    );
+  }
+}
+
+
+
+
+
+
+
