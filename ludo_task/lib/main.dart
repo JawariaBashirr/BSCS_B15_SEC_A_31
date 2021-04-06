@@ -216,6 +216,109 @@ class _DicePageState extends State<DicePage>
     dice3count = 0;
     dice4count = 0;
     });
+    Navigator.of(context).pop();
+    },
+    child: Text('Restart'),
+    ),
+    ],
+    );
+    showDialog(
+    context: context,
+    builder: (BuildContext) {
+    return alert;
+    },
+    );
+    }
+    });
+    },
+    child: Image.asset('images/dice$Bright.png'),
+    ),
+    ),
+    ],
+    ),
+    ),
+    Expanded(
+    child: Row(
+    children: <Widget>[
+    Expanded(
+    child: TextButton(
+    onPressed: () {
+    setState(() {
+    if (dice3count < 10) {
+    left = Random().nextInt(6) + 1;
+    dice3 = dice3 + left;
+    dice3count = dice3count + 1;
+    total = total + left;
+    }
+    ;
+    if (dice1 > dice2 &&
+    dice1 > dice3 &&
+    dice1 > dice4) {
+    winner = dice1;
+    winn = 1;
+    } else if (dice2 > dice1 &&
+    dice2 > dice3 &&
+    dice2 > dice4) {
+    winner = dice2;
+    winn = 2;
+    } else if (dice3 > dice1 &&
+    dice3 > dice2 &&
+    dice3 > dice4) {
+    winner = dice3;
+    winn = 3;
+    } else {
+    winner = dice4;
+    winn = 4;
+    }
+    ;
+    if (dice2count >= dice3count &&
+    dice1count >= dice3count &&
+    dice4count >= dice3count) {
+    if (limit > 0) {
+    limit = limit - 1;
+    }
+    }
+    ;
+    if (dice1count == 10 &&
+    dice2count == 10 &&
+    dice3count == 10 &&
+    dice4count == 10) {
+    AlertDialog alert = AlertDialog(
+    title: Text('Winner: Dice $winn'),
+    content: Text('Points: $winner points'),
+    actions: [
+    FlatButton(
+    onPressed: () {
+    Navigator.of(context).pop();
+    },
+    child: Text('Ok'),
+    ),
+    FlatButton(
+    onPressed: () {
+    setState(() {
+    total = 0;
+    winner = 0;
+    winn = 0;
+    dice1 = 0;
+    dice2 = 0;
+    dice3 = 0;
+    dice4 = 0;
+    limit = 10;
+    left = 1;
+    right = 1;
+    Bleft = 1;
+    Bright = 1;
+    dice1count = 0;
+    dice2count = 0;
+    dice3count = 0;
+    dice4count = 0;
+    });
+    Navigator.of(context).pop();
+    },
+    child: Text('Restart'),
+    ),
+    ],
+    );
 
 
 
